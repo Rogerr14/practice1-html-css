@@ -85,8 +85,8 @@ toma el hijo directo
 
 
 .section-main, footer{
-    align-self: center;
-    width: 100%;
+    align-self: stretch;
+    /* width: 100%; */
 }
 
 /* section skill*/
@@ -118,9 +118,11 @@ toma el hijo directo
 .section-footer{
     display: flex;
     justify-content: center;
-    gap: 50px;
+    gap: 10%;
     padding: 10px 0;
 }
+
+
 
 
 
@@ -147,7 +149,7 @@ toma el hijo directo
     flex-direction: column;
     align-items: center;
     padding: 20px;
-
+    transition-duration: 200ms;
 }
 
 
@@ -183,20 +185,21 @@ toma el hijo directo
       display: flex;
   flex-direction: column;
   gap: 10px;
+  align-items: center;
 }
 
 #contact-form-main{
     display: flex;
     gap: 10px;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
-#contact-form-main input{
+#contact-form-main input, textarea{
     border: none;
-    
+    outline: none;
 }
 
-#contact-form-main input:focus-within{
-    background: red;
-}
+
 button{
     background-color: transparent;
     border: 1px solid black;
