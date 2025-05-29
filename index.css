@@ -1,0 +1,218 @@
+/* 
+
+La jerarquia es 
+inline style
+id
+class
+element
+---------------------------------
+
+elemente > elemente
+toma el hijo directo
+
+
+
+
+
+
+
+*/
+*{
+    font-family: monospace;
+}
+
+
+#header, 
+#footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 35px;
+    border: 1px solid black;
+}
+
+#footer{
+    display: flex;
+    justify-content: center;
+}
+
+
+#nav ul{
+    display: flex;
+    gap: 15px;
+    list-style: none;
+
+}
+
+
+#nav .nav-link{
+    color: black;
+    text-decoration: none;
+}
+
+
+.title {
+    font-size: 2.5rem;
+}
+
+.section{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin: 40px;
+    padding: 20px;
+    border: 1px solid black;
+    transition-duration: 200ms;
+}
+
+
+.section:hover, .skill:hover, .projects-article:hover{
+    box-shadow: 5px 5px 0 black;
+    transition-duration: 200ms;
+}
+
+.section-header{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+
+.section-header h2,
+.section-header p{
+    margin: 0;
+}
+
+
+.section-main, footer{
+    align-self: center;
+    width: 100%;
+}
+
+/* section skill*/
+#section-skill-list{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skill{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 20px;
+    border: 1px solid black;
+    padding: 10px;
+
+    list-style: none;
+    transition-duration: 200ms;
+}
+
+.skill-logo{
+    height: 150px;
+    aspect-ratio: 1/1;
+}
+
+
+.section-footer{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 10px 0;
+}
+
+
+
+/*section projects*/
+
+#list-projects{
+    list-style: none;    
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+
+}
+.projects-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.projects-article{
+    
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+
+}
+
+
+ .projects-title{
+    font-size: 1.2rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px;
+     width: 100%;
+    border-bottom: 1px solid black;
+}
+
+
+.projects-image{
+    height: 150px;
+}
+
+
+/*section contact*/
+
+#contact{
+    background-color: black;
+    color: white;
+}
+
+#contact:hover{
+     box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.562);
+    transition-duration: 200ms;
+}
+
+#contact-form{
+      display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#contact-form-main{
+    display: flex;
+    gap: 10px;
+}
+#contact-form-main input{
+    border: none;
+    
+}
+
+#contact-form-main input:focus-within{
+    background: red;
+}
+button{
+    background-color: transparent;
+    border: 1px solid black;
+    padding: 7px 20px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: rgb(212, 212,212);
+}
+
+.button-dark{
+    color: white;
+    border: 1px solid white;
+}
+
+.button-dark:hover{
+    background-color: rgb(26, 26, 26);
+}
